@@ -1,0 +1,50 @@
+:root {
+  --background-color-light: #A6E3E9;
+  --text-color-light: #000000;
+  --card-background-light: #E3FDFD;
+
+  --background-color-dark: #222831;
+  --text-color-dark: #ffffff;
+  --card-background-dark: #393E46;
+}
+
+body.light {
+  --background-color: var(--background-color-light);
+  --text-color: var(--text-color-light);
+  --card-background: var(--card-background-light);
+}
+
+body.dark {
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --card-background: var(--card-background-dark);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.card {
+  background-color: #EEEEEE;
+}
+.carda {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+
+.card-headera,
+.card-bodya {
+  background-color: inherit;
+  color: inherit;
+}
+
+.btn-outline-primary,
+.btn-outline-primary:disabled,
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:visited,.btn-outline-primary:focus {
+  color: var(--text-color);
+  background-color: var(--background-color) !important;
+  border-color: var(--background-color) !important;
+}
